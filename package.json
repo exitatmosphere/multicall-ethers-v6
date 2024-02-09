@@ -1,0 +1,33 @@
+{
+  "name": "multicall-ethers-v6",
+  "version": "1.0.0",
+  "description": "Solidity contract and typescript library for static multi-calls",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build-contracts": "hardhat compile",
+    "prebuild": "pnpm build-contracts && rimraf ./dist",
+    "build": "tsc -p tsconfig.build.json",
+    "test": "hardhat test",
+    "prepublish": "npm run build"
+  },
+  "keywords": [
+    "Solidity",
+    "Ethereum"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "ethers": "^6.11.0",
+    "hardhat": "^2.19.5",
+    "rimraf": "^5.0.5",
+    "typescript": "^5.3.3"
+  },
+  "peerDependencies": {
+    "ethers": "^6.0.0"
+  }
+}
