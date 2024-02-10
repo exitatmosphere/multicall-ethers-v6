@@ -12,7 +12,7 @@
     "prebuild": "pnpm build-contracts && rimraf ./dist",
     "build": "tsc -p tsconfig.build.json",
     "test": "hardhat test",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "pnpm build"
   },
   "keywords": [
     "Solidity",
