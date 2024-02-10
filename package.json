@@ -2,8 +2,8 @@
   "name": "multicall-ethers-v6",
   "version": "1.0.0",
   "description": "Solidity contract and typescript library for static multi-calls",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
   "files": [
     "dist"
   ],
@@ -12,7 +12,7 @@
     "prebuild": "pnpm build-contracts && rimraf ./dist",
     "build": "tsc -p tsconfig.build.json",
     "test": "hardhat test",
-    "prepublish": "npm run build"
+    "prepublishOnly": "npm run build"
   },
   "keywords": [
     "Solidity",
