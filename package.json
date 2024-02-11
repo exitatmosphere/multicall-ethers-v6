@@ -1,12 +1,16 @@
 {
   "name": "multicall-ethers-v6",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Solidity contract and typescript library for static multi-calls",
   "main": "dist/src/index.js",
   "types": "dist/src/index.d.ts",
   "files": [
     "dist"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/exitatmosphere/multicall-ethers-v6.git"
+  },
   "scripts": {
     "build-contracts": "hardhat compile",
     "prebuild": "pnpm build-contracts && rimraf ./dist",

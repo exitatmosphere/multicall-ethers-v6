@@ -2,6 +2,12 @@
 
 Stripped clone of [@indexed-finance/multicall](https://github.com/indexed-finance/multicall) without uniswap specific functional which works with ethers-v6.
 
+## Installation
+
+```bash
+npm install multicall-ethers-v6
+```
+
 ## Usage example
 
 ```typescript
